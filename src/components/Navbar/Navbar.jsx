@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
-import logo from '../../assets/koti-wood-works-logo.png';
+import logo from "/assets/koti-wood-works-logo.png"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

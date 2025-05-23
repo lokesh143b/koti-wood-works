@@ -1,5 +1,5 @@
 import './About.css';
-import logo from "../../assets/koti-wood-works-logo.png";
+import logo from "/assets/koti-wood-works-logo.png"
 
 function About() {
   return (
