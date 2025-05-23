@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import NotFound from "./pages/NotFound/NotFound"
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
             </>
           }
         />
+
+        <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>
     </>
