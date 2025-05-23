@@ -1,0 +1,123 @@
+/* Footer main container */
+.footer {
+    background-color: #3b2414;
+    color: #f0e6d2;
+    padding: 2rem 1rem 1rem;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Footer content layout */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Each section in footer */
+  .footer-section {
+    flex: 1 1 120px;
+  }
+  
+  /* Brand logo and name */
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-logo-container img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+  
+  .footer-logo-container h2 {
+    font-size: 1.5rem;
+    color: #ffcc7f;
+    margin: 0;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  /* Description below logo */
+  .footer-section.brand p {
+    font-size: 0.95rem;
+    color: #e2d6c0;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+  }
+  
+  /* Quick Links & Contact Headings */
+  .footer-section h3 {
+    color: #ffcc7f;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+  }
+  
+  /* List styles */
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Links */
+  .footer-section a {
+    text-decoration: none;
+    color: #f0e6d2;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Contact text */
+  .footer-section.contact p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #e2d6c0;
+  }
+  
+  /* Bottom copyright */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: #d3c6ae;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      
+    }
+  
+    .footer-section.brand,
+    .footer-section.links,
+    .footer-section.contact {
+      width: 100%;
+    }
+  
+    .footer-logo-container {
+      justify-content: center;
+    }
+  }
+  

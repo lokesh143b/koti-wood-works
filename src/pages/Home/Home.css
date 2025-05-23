@@ -1,0 +1,117 @@
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80')
+    no-repeat center center/cover;
+  padding: 6rem 2rem; 
+  text-align: center;
+  color: #fff;
+  animation: fadeSlideUp 1s ease forwards;
+  padding-top: 80px;
+}
+
+/* Logo */
+.home img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+/* Heading */
+.home h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Georgia', serif;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* Subheading */
+.home p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* CTA Button */
+.cta {
+  background: #d2691e;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.cta:hover {
+  background: #b55b1a;
+  transform: translateY(-2px);
+}
+
+/* Responsive Text Scaling */
+@media (max-width: 768px) {
+  .home img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .home h1 {
+    font-size: 2.2rem;
+  }
+
+  .home p {
+    font-size: 1.1rem;
+  }
+
+  .cta {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 1.8rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    padding: 0.6rem 1.2rem;
+  }
+}
