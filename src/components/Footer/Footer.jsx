@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <div className="footer-section contact">
           <h3>Contact</h3>
-          <p>Email: <a href="mailto:info@kotiwoodworks.com">info@kotiwoodworks.com</a></p>
+          <p>Email: <a href="mailto:kotiwoodworks651@gmail.com">kotiwoodworks651@gmail.com</a></p>
           <p>Phone: <a href="tel:+911234567890">+91 99891 03920</a></p>
           <p>Location: Velpur, Tanuku mandal, Andrapradesh, 534222, India</p>
         </div>
