@@ -28,7 +28,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <a href="#home" className="logo-container" onClick={closeMenu}>
+      <a href="/" className="logo-container" onClick={closeMenu}>
         <img src={logo} className="logo" alt="Koti Wood Works Logo" />
         <div className="name">Koti Wood Works</div>
       </a>
@@ -41,7 +41,7 @@ function Navbar() {
         {['home', 'about', 'services', 'contact'].map((section) => (
           <li key={section}>
             <a
-              href={`#${section}`}
+              href={`/#${section}`}
               className={activeSection === section ? 'active' : ''}
               onClick={closeMenu}
             >

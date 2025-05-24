@@ -1,8 +1,14 @@
 import './Contact.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -28,21 +34,49 @@ function Contact() {
   };
 
   return (
-    <section className="contact-section">
-      <h2>Contact Us</h2>
-      <p className="contact-subtitle">We'd love to hear from you!</p>
+    <section className="contact-section" id="contact">
+      <h2 data-aos="fade-up">Contact Us</h2>
+      <p className="contact-subtitle" data-aos="fade-up" data-aos-delay="150">
+        We'd love to hear from you!
+      </p>
 
-      <form onSubmit={onSubmit} className="contact-form">
-        <label>Your Name</label>
-        <input type="text" name="name" placeholder="Enter your name" required />
+      <form onSubmit={onSubmit} className="contact-form" data-aos="fade-up" data-aos-delay="300">
+        <label data-aos="fade-right" data-aos-delay="400">Your Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+          data-aos="fade-left"
+          data-aos-delay="450"
+        />
 
-        <label>Your Email</label>
-        <input type="email" name="email" placeholder="Enter your email" required />
+        <label data-aos="fade-right" data-aos-delay="500">Your Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          data-aos="fade-left"
+          data-aos-delay="550"
+        />
 
-        <label>Your Message</label>
-        <textarea name="message" rows="6" placeholder="Enter your message" required></textarea>
+        <label data-aos="fade-right" data-aos-delay="600">Your Message</label>
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Enter your message"
+          required
+          data-aos="fade-left"
+          data-aos-delay="650"
+        ></textarea>
 
-        <button type="submit" disabled={loading}>
+        <button
+          type="submit"
+          disabled={loading}
+          data-aos="zoom-in"
+          data-aos-delay="700"
+        >
           {loading ? 'Sending...' : 'Submit now'}
         </button>
       </form>

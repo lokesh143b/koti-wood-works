@@ -1,14 +1,21 @@
 import './About.css';
-import logo from "/assets/koti-wood-works-logo.png"
+import logo from "/assets/koti-wood-works-logo.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="about-container">
-        <div className="about-image">
+        <div className="about-image" data-aos="fade-right">
           <img src={logo} alt="Koti Wood Works Logo" />
         </div>
-        <div className="about-text">
+        <div className="about-text" data-aos="fade-left" data-aos-delay="200">
           <h2>Who We Are</h2>
           <p>
             Koti Wood Works is a trusted name in wooden craftsmanship for over 25 years.

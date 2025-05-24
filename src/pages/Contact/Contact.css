@@ -6,7 +6,7 @@
   --shadow: rgba(90, 60, 35, 0.15);
 }
 
-@keyframes fadeUp {
+/* @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -15,7 +15,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .contact-section {
   background: var(--wood-light);

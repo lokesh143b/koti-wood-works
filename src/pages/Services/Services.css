@@ -7,7 +7,7 @@
 }
 
 /* Animation */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -16,7 +16,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .services-section {
   background: var(--wood-light);

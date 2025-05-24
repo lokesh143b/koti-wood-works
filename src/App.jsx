@@ -6,6 +6,7 @@ import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./pages/NotFound/NotFound"
+import Gallery from "./pages/Gallery/Gallery";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
             </>
           }
         />
+
+        <Route path="/gallery" element={<Gallery/>} />
 
         <Route path="*" element={<NotFound/>} />
       </Routes>
