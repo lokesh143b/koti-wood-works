@@ -47,8 +47,19 @@ function Navbar() {
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </a>
+            
           </li>
         ))}
+       <li>
+  <a
+    href="https://koti-wood-works-admin.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="admin-link"
+  >
+    Admin
+  </a>
+</li>
       </ul>
     </nav>
   );
