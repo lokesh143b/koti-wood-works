@@ -211,7 +211,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const IMAGES_PER_LOAD = 5;
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://koti-wood-works-server.onrender.com";
 
 function Gallery() {
   const [categories, setCategories] = useState([]);
